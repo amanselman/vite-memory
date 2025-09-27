@@ -1,18 +1,97 @@
-# React + Vite
+# Vite Memory Game 🎴
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple memory (“match the pairs”) game built using **React** + **Vite**.  
+Flip cards, match pairs, and try to finish in as few moves as possible!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+*(If deployed, put your hosted link here — e.g. via Vercel or Netlify)*  
+[View Live Game](https://your-deployment-link.com)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+```
+vite-memory/
+├─ public/
+│   └─ img/             # your card images (helmet-1.png, sword-1.png, etc.)
+├─ src/
+│   ├─ App.jsx          # main component & logic
+│   ├─ index.jsx        # app entry point
+│   └─ App.css           # styles
+├─ .gitignore
+├─ index.html
+├─ package.json
+└─ vite.config.js
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Features & Functionality
+
+- Shuffle deck of cards (duplicate & randomize)  
+- Flip two cards and check for match  
+- Track number of turns / moves  
+- “New Game” button to reset and reshuffle  
+
+---
+
+## 🧩 How to Run Locally
+
+1. Clone this repo  
+   ```bash
+   git clone https://github.com/amanselman/vite-memory.git
+   cd vite-memory
+   ```
+
+2. Install dependencies  
+   ```bash
+   npm install
+   ```
+
+3. Start dev server  
+   ```bash
+   npm run dev
+   ```
+
+4. Open the URL shown (usually `http://localhost:5173`) in browser  
+
+---
+
+## ✅ How to Play
+
+1. Click **New Game** to shuffle and lay down the cards  
+2. Click a card to flip it, then click another  
+3. If they match, they stay face up; otherwise, they flip back  
+4. Your goal: match all pairs in the least number of turns  
+
+---
+
+## 🧰 Tech Stack
+
+- **React** — UI  
+- **Vite** — build tool & dev server  
+- **JavaScript / JSX**  
+- **CSS** — styling  
+
+---
+
+## 📝 To-Do / Future Improvements
+
+- Add animations / flip transitions  
+- Add a timer or score leaderboard  
+- Mobile / responsive design  
+- Add sounds on match / mismatch  
+- Use TypeScript & stricter typing  
+- Add levels, larger decks  
+
+---
+
+## 🎉 Credits & License
+
+- Card images from your `public/img` directory  
+- You (author) — feel free to add your name / contact  
+- Licensed under **MIT License** — see `LICENSE` for details  
